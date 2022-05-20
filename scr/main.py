@@ -3,7 +3,7 @@ import pytesseract
 
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
-img = cv2.imread('curriculo-exemplo.jpg.jpg')
+img = cv2.imread('curriculo-exemplo.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img = cv2.resize(img, None, fx=2.5, fy=2.5, interpolation=cv2.INTER_CUBIC)
 
